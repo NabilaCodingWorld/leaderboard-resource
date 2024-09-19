@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #552dff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.head-idea {
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  background-color: #f2f1ff;
+}
+
+.player {
+  margin: 40px 80px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.top {
+  color: #552dff;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-bottom: 40px;
+}
+
+.player1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-name {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.player-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 20px 0;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog-destribution {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.late-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    /* align-items: flex-start; */
+  }
+
+  ul {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 40px;
+  }
+
+  .player {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+
+  .player1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .player-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 20px 60px;
+  }
+
+  .blog-destribution {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;
+  }
+
+  .late-course {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;
+  }
+}
